@@ -115,6 +115,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
     hwui.disable_vsync=true \
     debug.mdpcomp.logs=0 \
     BUILD_UTC_DATE=0 \
-    persist.sys.usb.config=mtp \
+    persist.sys.usb.config=mass_storage,adb \
     sys.mem.max_hidden_apps=10 \
     debug.camcorder.disablemeta=1
