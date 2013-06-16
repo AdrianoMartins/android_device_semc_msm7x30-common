@@ -116,5 +116,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
     debug.mdpcomp.logs=0 \
     BUILD_UTC_DATE=0 \
     persist.sys.usb.config=mass_storage,adb \
+    ro.secure=0 \
     sys.mem.max_hidden_apps=10 \
     debug.camcorder.disablemeta=1
