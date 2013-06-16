@@ -30,8 +30,8 @@ ARCH_ARM_HAVE_TLS_REGISTER := true
 TARGET_HAVE_TSLIB := true
 TARGET_USE_SCORPION_BIONIC_OPTIMIZATION := true
 
-TARGET_GLOBAL_CFLAGS += -mfpu=neon -mfloat-abi=softfp
-TARGET_GLOBAL_CPPFLAGS += -mfpu=neon -mfloat-abi=softfp
+TARGET_GLOBAL_CFLAGS += -mcpu=cortex-a8 -mtune=cortex-a8 -mfpu=neon -mfloat-abi=softfp
+TARGET_GLOBAL_CPPFLAGS += -mcpu=cortex-a8 -mtune=cortex-a8 -mfpu=neon -mfloat-abi=softfp
 
 # QCOM Hardware
 BOARD_USES_QCOM_HARDWARE := true
