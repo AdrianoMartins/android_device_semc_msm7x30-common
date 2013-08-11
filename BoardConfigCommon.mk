@@ -28,6 +28,9 @@ TARGET_CPU_ABI2 := armeabi
 TARGET_ARCH_VARIANT := armv7-a-neon
 ARCH_ARM_HAVE_TLS_REGISTER := true
 TARGET_HAVE_TSLIB := true
+
+# Scorpion Optmization
+TARGET_CPU_VARIANT := scorpion
 TARGET_USE_SCORPION_BIONIC_OPTIMIZATION := true
 
 TARGET_GLOBAL_CFLAGS += -mcpu=cortex-a8 -mtune=cortex-a8 -mfpu=neon -mfloat-abi=softfp
