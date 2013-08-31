@@ -85,7 +85,6 @@ PRODUCT_PACKAGES += \
 # Misc
 PRODUCT_PACKAGES += \
     com.android.future.usb.accessory \
-    LegacyCamera \
     Torch
 
 # we have enough storage space to hold precise GC data
