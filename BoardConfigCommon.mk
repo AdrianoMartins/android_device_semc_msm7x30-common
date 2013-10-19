@@ -34,8 +34,11 @@ TARGET_CPU_VARIANT := scorpion
 TARGET_USE_SCORPION_BIONIC_OPTIMIZATION := true
 ARCH_ARM_HAVE_NEON := true
 
-TARGET_GLOBAL_CFLAGS += -mcpu=cortex-a8 -mtune=cortex-a8 -mfpu=neon -mfloat-abi=softfp
-TARGET_GLOBAL_CPPFLAGS += -mcpu=cortex-a8 -mtune=cortex-a8 -mfpu=neon -mfloat-abi=softfp
+#TARGET_GLOBAL_CFLAGS += -mcpu=cortex-a8 -mtune=cortex-a8 -mfpu=neon -mfloat-abi=softfp
+#TARGET_GLOBAL_CPPFLAGS += -mcpu=cortex-a8 -mtune=cortex-a8 -mfpu=neon -mfloat-abi=softfp
+
+TARGET_GLOBAL_CFLAGS += -mcpu=cortex-a8 -mtune=cortex-a8 -mfpu=neon -mfloat-abi=softfp -flto
+TARGET_GLOBAL_CPPFLAGS += -mcpu=cortex-a8 -mtune=cortex-a8 -mfpu=neon -mfloat-abi=softfp -flto
 
 # QCOM Hardware
 BOARD_USES_QCOM_HARDWARE := true
